@@ -1,10 +1,13 @@
-import React from 'react'
+import * as React from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import { ACTION_TYPES } from '../../models/enumActions';
+import { IRoom } from '../../models/types'
 
 interface Props { }
 
 export const RoomsSvg = (props: Props) => {
     const { } = props
-
+    const currentRoom = useSelector((state: Array<IRoom>) => state);
     return (
         <>
             <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" width="580px" height="441px" viewBox="0 0 580 441" version="1.1">
