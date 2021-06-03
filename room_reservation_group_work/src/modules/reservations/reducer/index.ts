@@ -23,7 +23,7 @@ const reducer = (state = initialState, action: IAction) => {
                   if(res===fres){
                       room.reservations = [
                           ...room.reservations,
-                          action.payload
+                          action.payload,
                       ]
                   }
                   return res;
